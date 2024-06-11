@@ -1,0 +1,25 @@
+.video{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.img,video{
+    max-width: 100%;
+}
+.video{
+    display: block;
+    vertical-align: middle;
+}
+.NewCollection{
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.NewCollection h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    text-align: center;
+}
