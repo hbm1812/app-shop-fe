@@ -3,18 +3,24 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding:24px 35px; 
-    position: relative;
+    padding:18px 0px;
+    box-shadow: 0 2px 0 0 rgb(244,244,244);
+    position: fixed;
     z-index: 100;
+    border-bottom: 1px solid #e5e7eb;
+    background-color: white;
+    width: 100%;
 }
 
 .MenuContainer .MenuContent{
     display: flex;
     flex-direction: row;
-    gap: 30px;
-    font-size: 16px;
+    gap:30px;
+    font-size: 18px;
     font-weight: bold;
     color: inherit;
+    font-family: SFUFuturaLight;
+    padding:0 35px;
 }
 
 
@@ -27,7 +33,7 @@ a {
     transition: color .3s;
     -webkit-text-decoration-skip: objects;
 }
-a:hover {
+.MenuContent a:hover {
     color: #40a9ff;
 }
 
@@ -35,4 +41,9 @@ a:hover {
 .MenuContainer .MenuIcon{
     font-size: 24px;
 }
+
+.MenuLogoContainer{
+    margin-left: -190px;
+}
+
 

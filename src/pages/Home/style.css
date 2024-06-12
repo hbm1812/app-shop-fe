@@ -1,3 +1,6 @@
+.body{
+    padding-top: 20px;
+}
 .video{
     width: 100%;
     height: 100%;
@@ -22,4 +25,81 @@
     font-size: 1.25rem;
     line-height: 1.75rem;
     text-align: center;
+}
+
+
+
+.NewCollection p{
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    margin-top: 2.5rem;
+    font-family: SFUFuturaLight;
+}
+
+
+.ProductContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.Product{
+    height: 100%;
+    width: 24%;
+    margin: 10px;
+}
+.ProductImg img{
+    width: 95%;
+}
+
+
+
+.Title h2{
+    font-size: 16px;
+    line-height: 1.5rem;
+    font-family: SFUFuturaLight !important;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    color: #050505;
+    text-align: start;
+}
+
+.Title span{
+    color: #050505;
+    font-family: SFUFuturaRegular !important;
+    font-size: 1rem;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+.ButtonContain{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+   margin-top: 50px;
+}
+
+.Btn{
+    background-color: #050505;
+    width: 161px;
+    height: 38px;
+    
+
+}
+.Btn p{
+    color:white;
+    text-align: center;
+    margin-top: 7px;
+}
+
+.Banner img{
+    margin: 50px 0;
+    width: 100%;
 }

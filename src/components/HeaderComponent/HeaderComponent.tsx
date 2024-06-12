@@ -8,10 +8,11 @@ const HeaderComponent = () => {
     {
       key: '1',
       label: (
-        <a  rel="noopener noreferrer" href="">
+        <a  rel="noopener noreferrer" href="/shop">
           <MenuDropDownText>ALL</MenuDropDownText>
         </a>
       ),
+      
     },
     {
       key: '2',
@@ -66,27 +67,6 @@ const HeaderComponent = () => {
   return (
     <div className='MenuContainer'>
     
-        {/* <Col span={6}>
-          <Row justify="space-between">
-            <Col span={4}>
-              <Dropdown menu={{ items }}>
-                <a onClick={(e) => e.preventDefault()}>
-                  <Space>
-                    <MenuText>SHOP</MenuText>
-                  </Space>
-                </a>
-              </Dropdown>
-            </Col>
-            <Col span={4}><MenuText>BLOG</MenuText></Col>
-            <Col span={4}><MenuText>COLLECTION</MenuText></Col>
-            <Col span={4}><MenuText>OUTFIT</MenuText></Col>
-          </Row>
-        </Col>
-        <LogoCol span={12} >
-        <img src="https://api.under.vn/wp-content/uploads/2022/09/logo-2.svg" width={120} height={20} alt="" />   
-        </LogoCol>
-        <Col span={6}>col-8</Col> */}
-
         <div className="MenuContent">
           <div className='MenuItem'><a href=""><Dropdown menu={{ items }}>
                 <a onClick={(e) => e.preventDefault()}>
@@ -99,10 +79,10 @@ const HeaderComponent = () => {
           <div className='MenuItem'><a href="">COLLECTION</a></div>
           <div className='MenuItem'><a href="">OUTFIT</a></div>
         </div>
-        <div><img src="https://api.under.vn/wp-content/uploads/2022/09/logo-2.svg" width={120} height={20} alt="" /></div>
+        <div className='MenuLogoContainer'><a href="/"><img src="https://api.under.vn/wp-content/uploads/2022/09/logo-2.svg" width={120} height={20} alt="" /></a></div>
         <div className="MenuContent">
           <div className='MenuIcon'><SearchOutlined /></div>
-          <div className='MenuIcon'><UserOutlined /></div>
+          <div className='MenuIcon'><a href="/login"><UserOutlined /></a></div>
           <div className='MenuIcon'><ShoppingCartOutlined /></div>
         </div>
       

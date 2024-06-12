@@ -1,0 +1,43 @@
+.FooterContainer{
+    display: flex;
+    flex-direction: row;
+    margin: 0 40px;
+    justify-content: space-between;
+}
+
+.Information{
+    width: 84%;
+}
+.Support{
+   
+}
+.Information h2{
+    font-weight: 700;
+    font-size: 1.125rem !important;
+    line-height: 1.75rem !important;
+    color: #050505;
+    font-family: SFUFuturaRegular !important;
+}
+
+.Information p{
+    font-family: SFUFuturaLight !important;
+    color: #050505;
+}
+
+
+.Support h2{
+    font-weight: 700;
+    font-size: 1.125rem !important;
+    line-height: 1.75rem !important;
+    color: #050505;
+    font-family: SFUFuturaRegular !important;
+}
+.Support p{
+    font-family: SFUFuturaLight !important;
+    color: #050505;
+}
+
+
+.Support a:hover {
+    color: #40a9ff;
+}
