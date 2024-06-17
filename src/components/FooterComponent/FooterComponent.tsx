@@ -22,7 +22,12 @@ const FooterComponent = () => {
         <p><a href="">Điều khoản</a></p>
         <p><a href="">About us</a></p>
       </div>
+      
     </div>
+    <div className='Copyright'>
+    <p>Copyright © 2019-2022 By UNDER Retail. All rights reserved.</p>
+    </div>
+    
     </>
     
   )

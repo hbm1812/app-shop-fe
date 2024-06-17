@@ -89,9 +89,8 @@ hr{
 
 .Size h2{
     padding-top: 3rem;
-    text-transform: uppercase;
-    font-weight: 500 !important;
-    font-size: 1rem;
+    font-weight: 300 !important;
+    font-size: 18px;
     line-height: 1.5rem;
     color: #050505;
 }
@@ -115,13 +114,16 @@ hr{
     margin: 0 10px;
 }
 
-.BtnAddToCart{
+.BtnAddToCart button{
     margin-top: 50px;
     background-color: #050505;
     color: white;
     text-align: center;
     height: 40px;
     cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+
 }
 
 .BtnAddToCart span{
@@ -201,3 +203,4 @@ hr{
 .ProductImg img{
     width: 95%;
 }
+

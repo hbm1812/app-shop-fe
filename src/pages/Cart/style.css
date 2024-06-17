@@ -1,0 +1,122 @@
+.CartBody{
+    padding-top: 100px;
+    border-bottom: 1px solid #e5e7eb;
+    background-color: rgb(244,244,244);
+}
+
+.CartBody h1{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin-top: 0;
+
+}
+
+.CartContainer{
+    margin: 40px 20px 0 20px;
+    padding-bottom: 40px;
+}
+
+.Voucher{
+    padding-top: 40px;
+}
+.Voucher span{
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 500;
+    
+}
+
+.VoucherInput{
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+}
+.ListCart{
+    margin-top: 25px;
+}
+
+.CartPrice{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap:70px;
+}
+.CartPrice span{
+    font-weight: 700px;
+    margin-top: 7px;
+}
+
+.CartButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ant-table{
+    width: 100%;
+}
+
+.ant-table{
+   
+    overflow: auto !important;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, .85);
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    list-style: none;
+    font-feature-settings: "tnum";
+    position: relative;
+    font-size: 14px;
+    background: #fff;
+    border-radius: 2px;
+    font-family: SFUFuturaRegular;
+}
+
+thead{
+    display: table-header-group;
+    vertical-align: middle;
+    unicode-bidi: isolate;
+}
+.ant-table-cell{
+    text-align: center;
+}
+
+.ant-table-container, .ant-table-container table>thead>tr:first-child th:first-child {
+    border-top-left-radius: 2px;
+}
+
+.ant-table-thead>tr>th {
+    position: relative;
+    color: rgba(0, 0, 0, .85);
+    font-weight: 500;
+    text-align: center;
+    background: #fafafa;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background .3s ease;
+}
+
+.ant-table-tbody:hover {
+    background: #fafafa;
+}
+
+.ant-table-tbody>tr>td, .ant-table-thead>tr>th {
+    position: relative;
+    padding: 16px;
+    overflow-wrap: break-word;
+    
+}
+
+
+.item-name{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.item-name a{
+    font-weight: bold;
+   margin: 20px 20px 20px 0;
+    
+}

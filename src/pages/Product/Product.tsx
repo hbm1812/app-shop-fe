@@ -1,15 +1,26 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { BreadcrumbFix } from './style'
 import './style.css'
 import { Button, Col, Flex, Row } from 'antd'
 import { RightOutlined } from '@ant-design/icons'
+import CartContext from '../Cart/CartContext'
 
-
+const product = {   stock:10, id: 1, name: 'UNDER Higher Tee/ White', price: 230000, quantity: 1, image: 'https://api.under.vn/wp-content/uploads/2022/09/UTS013B.jpg' }
+// const product = { stock:5, id: 2, name: 'UNDER Official Logo Tee/ Black - M', price: 230000, quantity: 1, image: 'https://api.under.vn/wp-content/uploads/2022/09/UTS013A.jpg'}
+;
 
 const Product = () => {
     const [isThongTinSanPham, setIsThongTinSanPham] = React.useState(true);
     const [isHuongDanLuaSize, setIsHuongDanLuaSize] = React.useState(true);
 
+
+    const cartContext = useContext(CartContext);
+
+    if (!cartContext) {
+        return <div>Error: CartContext not found</div>;
+    }
+
+    const { addItemToCart } = cartContext;
     return (
         <>
             <div className='Body'>
@@ -27,7 +38,7 @@ const Product = () => {
                                     href: '/',
                                 },
                                 {
-                                    title: 'UNDER Higher Tee/ White',
+                                    title: 'UNDER Higher Tee / White',
 
                                 },
 
@@ -64,18 +75,18 @@ const Product = () => {
 
                     </div>
                     <div className='ContentRight'>
-                        <h1>UNDER HIGHER TEE/ WHITE</h1>
+                        <h1>{product.name}</h1>
                         <div className='Price'>
-                            <span>230.000</span>
-                            <span>VND</span>
+                            <span>{product.price}</span>
+                            <span>.000 VND</span>
                         </div>
 
                         <div className='Size'>
                             <h2>Size:</h2>
-                            <Flex gap="small" wrap>
-                                <Button>M</Button>
-                                <Button>L</Button>
-                                <Button>XL</Button>
+                            <Flex gap="small" wrap >
+                                <Button style={{ width:80, borderRadius:0 }}>M</Button>
+                                <Button style={{ width:80, borderRadius:0 }}>L</Button>
+                                <Button style={{ width:80 , borderRadius:0}}>XL</Button>
                             </Flex>
 
                         </div>
@@ -91,7 +102,7 @@ const Product = () => {
                         </div>
 
                         <div className='BtnAddToCart'>
-                            <span>THÊM VÀO GIỎ HÀNG</span>
+                        <button onClick={() => addItemToCart(product)}>THÊM VÀO GIỎ HÀNG</button>
                         </div>
 
 

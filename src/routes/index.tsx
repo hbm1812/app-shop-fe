@@ -1,4 +1,6 @@
 import Login from "../pages/Account/Login";
+import Cart from "../pages/Cart/Cart";
+
 import Home from "../pages/Home/Home";
 import NotFoundPage from "../pages/NotFoundPage/NotFoundPage";
 import Product from "../pages/Product/Product";
@@ -30,5 +32,11 @@ export const routes =[
         path: '/product',
         page: Product,
         isShowHeader:true
-    }
+    },
+    {
+        path: '/cart',
+        page: Cart,
+        isShowHeader:true
+    },
+
 ]

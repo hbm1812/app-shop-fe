@@ -61,7 +61,7 @@ const Login = () => {
                       ]}
                     >
                       <Input
-                        style={{ width: 650, height: 47, marginTop: 10 }}
+                        style={{ width: 650, height: 47, marginTop: 10, borderRadius:0 }}
                       />
                     </Form.Item>
 
@@ -77,7 +77,7 @@ const Login = () => {
                       ]}
                     >
                       <Input.Password
-                        style={{ width: 650, height: 47, marginTop: 10 }}
+                        style={{ width: 650, height: 47, marginTop: 10, borderRadius:0 }}
                       />
                     </Form.Item>
 
@@ -89,6 +89,7 @@ const Login = () => {
                           backgroundColor: "#000000",
                           height: 40,
                           marginTop: 10,
+                          borderRadius:0
                         }}
                       >
                         ĐĂNG NHẬP
@@ -127,7 +128,7 @@ const Login = () => {
                           ]}
                         >
                           <Input
-                            style={{ width: 650, height: 47, marginTop: 10 }}
+                            style={{ width: 650, height: 47, marginTop: 10, borderRadius:0 }}
                           />
                         </Form.Item>
 
@@ -144,7 +145,7 @@ const Login = () => {
                           ]}
                         >
                           <Input
-                            style={{ width: 650, height: 47, marginTop: 10 }}
+                            style={{ width: 650, height: 47, marginTop: 10, borderRadius:0}}
                           />
                         </Form.Item>
 
@@ -160,7 +161,7 @@ const Login = () => {
                           ]}
                         >
                           <Input
-                            style={{ width: 650, height: 47, marginTop: 10 }}
+                            style={{ width: 650, height: 47, marginTop: 10 , borderRadius:0}}
                           />
                         </Form.Item>
 
@@ -175,7 +176,7 @@ const Login = () => {
                             },
                           ]}
                         >
-                          <DatePicker style={{ width: 650, height: 47, marginTop: 10 }} onChange={onChange} />
+                          <DatePicker style={{ width: 650, height: 47, marginTop: 10 , borderRadius:0}} onChange={onChange} />
 
                         </Form.Item>
 
@@ -187,13 +188,13 @@ const Login = () => {
                           rules={[
                             {
                               required: true,
-                              message: "Please input your phone number!",
+                              message: "Please input your giới tính!",
                             },
                           ]}
                         >
                           <Select
                             defaultValue=""
-                            style={{ width: 650, height: 47, marginTop: 10 }}
+                            style={{ width: 650, height: 47, marginTop: 10, borderRadius:0 }}
                             onChange={handleChange}
                             options={[
                               { value: 'Nam', label: 'Nam' },
@@ -217,7 +218,7 @@ const Login = () => {
                           ]}
                         >
                           <Input.Password
-                            style={{ width: 650, height: 47, marginTop: 10 }}
+                            style={{ width: 650, height: 47, marginTop: 10, borderRadius:0 }}
                           />
                         </Form.Item>
 
@@ -233,7 +234,7 @@ const Login = () => {
                           ]}
                         >
                           <Input.Password
-                            style={{ width: 650, height: 47, marginTop: 10 }}
+                            style={{ width: 650, height: 47, marginTop: 10, borderRadius:0 }}
                           />
                         </Form.Item>
 
@@ -246,6 +247,7 @@ const Login = () => {
                               backgroundColor: "#000000",
                               height: 40,
                               marginTop: 10,
+                             borderRadius:0
                             }}
                           >
                             ĐĂNG KÝ
@@ -269,6 +271,7 @@ const Login = () => {
                             height: 40,
                             marginTop: 10,
                             width: 180,
+                            borderRadius:0
                           }}
                         >
                           TẠO TÀI KHOẢN MỚI
@@ -279,7 +282,7 @@ const Login = () => {
               </div>
             </div>
           </div>
-          <br />
+          
         </div>
       </div>
     </>

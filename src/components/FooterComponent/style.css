@@ -8,9 +8,7 @@
 .Information{
     width: 84%;
 }
-.Support{
-   
-}
+
 .Information h2{
     font-weight: 700;
     font-size: 1.125rem !important;
@@ -40,4 +38,11 @@
 
 .Support a:hover {
     color: #40a9ff;
+}
+
+.Copyright p{
+    font-family: SFUFuturaLight !important;
+    color: #050505;
+    text-align: center;
+    margin-top: 20px;
 }
