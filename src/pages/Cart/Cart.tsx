@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import './style.css'
-import { Button, Input, Pagination } from 'antd'
+import { Button, Input, InputNumber, Pagination } from 'antd'
 import CartTable from '../../components/Table/CartTable'
 import CartContext from './CartContext'
 import { DeleteOutlined } from '@ant-design/icons'
@@ -71,13 +71,14 @@ const Cart: React.FC = () => {
                       </td>
                       <td className='ant-table-cell ant-table-cell-row-hover'>{item.price.toLocaleString()} VND</td>
                       <td className='ant-table-cell ant-table-cell-row-hover'>
-                        <input
+                        {/* <input
                           type="number"
                           value={item.quantity}
                           style={{ width:68, height:31, textAlign:"center", fontSize:16 }}
                           onChange={(e) => handleQuantityChange(item.id, parseInt(e.target.value), item.stock)}
                           min="1"
-                        />
+                        /> */}
+
                       </td>
                       <td className='ant-table-cell ant-table-cell-row-hover'>
                         <img style={{ width:30 }}  src="https://under.vn/images/icon/delete.svg" onClick={() => removeItemFromCart(item.id)} alt="" />

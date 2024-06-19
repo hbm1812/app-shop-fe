@@ -1,15 +1,15 @@
-.FooterContainer{
+.FooterContainer {
     display: flex;
     flex-direction: row;
     margin: 0 40px;
     justify-content: space-between;
 }
 
-.Information{
+.Information {
     width: 84%;
 }
 
-.Information h2{
+.Information h2 {
     font-weight: 700;
     font-size: 1.125rem !important;
     line-height: 1.75rem !important;
@@ -17,20 +17,21 @@
     font-family: SFUFuturaRegular !important;
 }
 
-.Information p{
+.Information p {
     font-family: SFUFuturaLight !important;
     color: #050505;
 }
 
 
-.Support h2{
+.Support h2 {
     font-weight: 700;
     font-size: 1.125rem !important;
     line-height: 1.75rem !important;
     color: #050505;
     font-family: SFUFuturaRegular !important;
 }
-.Support p{
+
+.Support p {
     font-family: SFUFuturaLight !important;
     color: #050505;
 }
@@ -40,9 +41,32 @@
     color: #40a9ff;
 }
 
-.Copyright p{
+.Copyright p {
     font-family: SFUFuturaLight !important;
     color: #050505;
     text-align: center;
     margin-top: 20px;
+}
+
+
+@media (max-width: 640px) {
+    .FooterContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 0 40px;
+        justify-content: space-between;
+    }
+    .Support{
+        margin-top: 30px;
+    }
+}
+
+
+@media (min-width: 640px) {
+    .FooterContainer {
+        display: flex;
+        flex-direction: row;
+        margin: 0 40px;
+        justify-content: space-between;
+    }
 }

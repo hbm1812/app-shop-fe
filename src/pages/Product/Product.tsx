@@ -34,7 +34,7 @@ const Product = () => {
                                     href: '/',
                                 },
                                 {
-                                    title: 'Shop',
+                                    title: 'T-Shirt',
                                     href: '/',
                                 },
                                 {
@@ -54,12 +54,7 @@ const Product = () => {
                             <img src="https://api.under.vn/wp-content/uploads/2022/04/Higher-trang-01.jpg" alt="" />
                         </div>
                         <div className='ListImage'>
-                            {/* <div className='SmallImage'> <img src="https://api.under.vn/wp-content/uploads/2022/04/Higher-trang-01.jpg" alt="" /></div>
-                            <div className='SmallImage'> <img src="https://api.under.vn/wp-content/uploads/2022/04/Higher-trang-01.jpg" alt="" /></div>
-                            <div className='SmallImage'> <img src="https://api.under.vn/wp-content/uploads/2022/04/Higher-trang-01.jpg" alt="" /></div>
-                            <div className='SmallImage'> <img src="https://api.under.vn/wp-content/uploads/2022/04/Higher-trang-01.jpg" alt="" /></div>
-                            <div className='SmallImage'> <img src="https://api.under.vn/wp-content/uploads/2022/04/Higher-trang-01.jpg" alt="" /></div>
-                            <div className='SmallImage'> <img src="https://api.under.vn/wp-content/uploads/2022/04/Higher-trang-01.jpg" alt="" /></div> */}
+
 
                             <ul className="thumbnail-list">
                                 <li><img src="https://api.under.vn/wp-content/uploads/2022/04/under-higher-tee-white-UTS010B.jpg" alt="Thumbnail 1" className="thumbnail" data-large-image-src="https://api.under.vn/wp-content/uploads/2022/04/under-higher-tee-white-UTS010B.jpg" /></li>

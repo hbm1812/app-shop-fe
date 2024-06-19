@@ -1,4 +1,6 @@
-.MenuContainer{
+
+
+.desktop-menu{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -12,7 +14,7 @@
     width: 100%;
 }
 
-.MenuContainer .MenuContent{
+.desktop-menu .MenuContent{
     display: flex;
     flex-direction: row;
     gap:30px;
@@ -38,12 +40,117 @@ a {
 }
 
 
-.MenuContainer .MenuIcon{
+.desktop-menu .MenuIcon{
     font-size: 24px;
 }
 
-.MenuLogoContainer{
-    margin-left: -190px;
+
+
+.mobile-menu{
+    display:none;
 }
 
 
+
+  @media (min-width: 640px) {
+    .desktop-menu{
+        display:flex;
+    }
+    .mobile-menu{
+        display:none;
+    }
+
+    .mobile-menu{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding:18px 0px;
+        box-shadow: 0 2px 0 0 rgb(244,244,244);
+        position: fixed;
+        z-index: 100;
+        border-bottom: 1px solid #e5e7eb;
+        background-color: white;
+        width: 100%;
+    }
+
+    .mobile-menu .MenuContent{
+        display: flex;
+        flex-direction: row;
+        gap:30px;
+        font-size: 18px;
+        font-weight: bold;
+        color: inherit;
+        font-family: SFUFuturaLight;
+        padding:0 35px;
+    }
+
+    .mobile-menu .MenuIcon{
+        font-size: 24px;
+    }
+   
+  }
+
+
+@media (max-width: 640px) {
+    .desktop-menu{
+        display:none;
+    }
+    .mobile-menu{
+        display:flex;
+    }
+
+    .mobile-menu{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding:18px 0px;
+        box-shadow: 0 2px 0 0 rgb(244,244,244);
+        position: fixed;
+        z-index: 100;
+        border-bottom: 1px solid #e5e7eb;
+        background-color: white;
+        width: 100%;
+    }
+
+    .mobile-menu .MenuContent{
+        gap:30px;
+        font-size: 18px;
+        font-weight: bold;
+        color: inherit;
+        font-family: SFUFuturaLight;
+        padding:0 35px;
+        
+    }
+
+    .mobile-menu .MenuIcon{
+        font-size: 24px;
+    }
+
+    .mobile-menu-nav-title{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-menu-nav{
+       margin: 5px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+
+    .mobile-menu-nav li{
+       list-style: none;
+       margin: 5px 10px;
+       font:18px;
+       font-weight: 500;
+    }
+   .MenuContent{
+    display: flex;
+    flex-direction: row;
+   }
+   hr{
+    opacity: 0.3; /* 70% opacity */
+    border-color: #ffffff; /* Dark gray color */
+
+}
+  }
