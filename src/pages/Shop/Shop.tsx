@@ -3,8 +3,75 @@ import './style.css';
 
 import { Breadcrumb, Pagination, Select } from 'antd';
 import { BreadcrumbFix } from './style';
+import { IProducts } from './interfaces/typeShop';
+import ListProduct from '../../components/ListProduct';
 
 const Shop = () => {
+    const dataProduct: IProducts[] = [
+
+        {
+            tenSanPham: 'UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE',
+            anh: 'https://api.under.vn/wp-content/uploads/2022/09/UTS013B.jpg',
+            giaTien: '250.000'
+        },
+        {
+            tenSanPham: 'UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE',
+            anh: 'https://api.under.vn/wp-content/uploads/2022/09/UTS013B.jpg',
+            giaTien: '250.000'
+        },
+        {
+            tenSanPham: 'UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE',
+            anh: 'https://api.under.vn/wp-content/uploads/2022/09/UTS013B.jpg',
+            giaTien: '250.000'
+        },
+        {
+            tenSanPham: 'UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE',
+            anh: 'https://api.under.vn/wp-content/uploads/2022/09/UTS013B.jpg',
+            giaTien: '250.000'
+        },
+        {
+            tenSanPham: 'UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE',
+            anh: 'https://api.under.vn/wp-content/uploads/2022/09/UTS013B.jpg',
+            giaTien: '250.000'
+        },
+        {
+            tenSanPham: 'UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE',
+            anh: 'https://api.under.vn/wp-content/uploads/2022/09/UTS013B.jpg',
+            giaTien: '250.000'
+        },
+        {
+            tenSanPham: 'UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE',
+            anh: 'https://api.under.vn/wp-content/uploads/2022/09/UTS013B.jpg',
+            giaTien: '250.000'
+        },
+        {
+            tenSanPham: 'UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE',
+            anh: 'https://api.under.vn/wp-content/uploads/2022/09/UTS013B.jpg',
+            giaTien: '250.000'
+        },
+        {
+            tenSanPham: 'UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE',
+            anh: 'https://api.under.vn/wp-content/uploads/2022/09/UTS013B.jpg',
+            giaTien: '250.000'
+        },
+        {
+            tenSanPham: 'UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE',
+            anh: 'https://api.under.vn/wp-content/uploads/2022/09/UTS013B.jpg',
+            giaTien: '250.000'
+        },
+        {
+            tenSanPham: 'UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE',
+            anh: 'https://api.under.vn/wp-content/uploads/2022/09/UTS013B.jpg',
+            giaTien: '250.000'
+        },
+        {
+            tenSanPham: 'UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE',
+            anh: 'https://api.under.vn/wp-content/uploads/2022/09/UTS013B.jpg',
+            giaTien: '250.000'
+        },
+
+
+    ]
 
     const handleChange = (value: string) => {
         console.log(`selected ${value}`);
@@ -48,187 +115,13 @@ const Shop = () => {
                     </div>
                 </div>
 
-                {/* Sản phẩm hang 1 */}
-                <div className='ProductContainer'>
-                    <div className='Product'>
-                        <a href="/product">
-                            <div className='ProductImg'>
-                                <img src="https://api.under.vn/wp-content/uploads/2022/09/UTS013B.jpg" alt="" />
-                            </div>
-                            <div className='Title'>
-                                <h2>UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE</h2>
-                                <span>250.000</span>
-                                <span>VND</span>
-                            </div>
-                        </a>
-                    </div>
 
-                    <div className='Product'>
-                        <a href="">
-                            <div className='ProductImg'>
-                                <img src="https://api.under.vn/wp-content/uploads/2022/09/UTS013A.jpg" alt="" />
-                            </div>
-                            <div className='Title'>
-                                <h2>UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE</h2>
-                                <span>250.000  <span> VND</span> </span>
-
-                            </div>
-                        </a>
-                    </div>
-
-                    <div className='Product'>
-                        <a href="">
-                            <div className='ProductImg'>
-                                <img src="https://api.under.vn/wp-content/uploads/2022/09/UTS013C.jpg" alt="" />
-                            </div>
-                            <div className='Title'>
-                                <h2>UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE</h2>
-                                <span>250.000</span>
-                                <span>VND</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div className='Product'>
-                        <a href="">
-                            <div className='ProductImg'>
-                                <img src="https://api.under.vn/wp-content/uploads/2022/09/UTS026_2-1.jpg" alt="" />
-                            </div>
-                            <div className='Title'>
-                                <h2>UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE</h2>
-                                <span>250.000</span>
-                                <span>VND</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    
-
-
-                </div>
-
-                {/* Sản phẩm hang 2 */}
-                <div className='ProductContainer'>
-                    <div className='Product'>
-                        <a href="">
-                            <div className='ProductImg'>
-                                <img src="https://api.under.vn/wp-content/uploads/2022/09/UTS025_2-1.jpg" alt="" />
-                            </div>
-                            <div className='Title'>
-                                <h2>UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE</h2>
-                                <span>250.000</span>
-                                <span>VND</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div className='Product'>
-                        <a href="">
-                            <div className='ProductImg'>
-                                <img src="https://api.under.vn/wp-content/uploads/2022/09/UTS024_2-1.jpg" alt="" />
-                            </div>
-                            <div className='Title'>
-                                <h2>UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE</h2>
-                                <span>250.000  <span> VND</span> </span>
-
-                            </div>
-                        </a>
-                    </div>
-
-                    <div className='Product'>
-                        <a href="">
-                            <div className='ProductImg'>
-                                <img src="https://api.under.vn/wp-content/uploads/2022/09/UTS025_2-1.jpg" alt="" />
-                            </div>
-                            <div className='Title'>
-                                <h2>UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE</h2>
-                                <span>250.000</span>
-                                <span>VND</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div className='Product'>
-                        <a href="">
-                            <div className='ProductImg'>
-                                <img src="https://api.under.vn/wp-content/uploads/2022/09/UTS024_2-1.jpg" alt="" />
-                            </div>
-                            <div className='Title'>
-                                <h2>UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE</h2>
-                                <span>250.000</span>
-                                <span>VND</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    
-
-
-                </div>
-
-                {/* Sản phẩm hang 3 */}
-                <div className='ProductContainer'>
-                    <div className='Product'>
-                        <a href="">
-                            <div className='ProductImg'>
-                                <img src="https://api.under.vn/wp-content/uploads/2022/09/UTS021_1.jpg" alt="" />
-                            </div>
-                            <div className='Title'>
-                                <h2>UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE</h2>
-                                <span>250.000</span>
-                                <span>VND</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div className='Product'>
-                        <a href="">
-                            <div className='ProductImg'>
-                                <img src="https://api.under.vn/wp-content/uploads/2022/09/UTS020_2-1.jpg" alt="" />
-                            </div>
-                            <div className='Title'>
-                                <h2>UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE</h2>
-                                <span>250.000  <span> VND</span> </span>
-
-                            </div>
-                        </a>
-                    </div>
-
-                    <div className='Product'>
-                        <a href="">
-                            <div className='ProductImg'>
-                                <img src="https://api.under.vn/wp-content/uploads/2022/09/UTS019_2-1.jpg" alt="" />
-                            </div>
-                            <div className='Title'>
-                                <h2>UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE</h2>
-                                <span>250.000</span>
-                                <span>VND</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div className='Product'>
-                        <a href="">
-                            <div className='ProductImg'>
-                                <img src="https://api.under.vn/wp-content/uploads/2022/09/UTS018_2-1.jpg" alt="" />
-                            </div>
-                            <div className='Title'>
-                                <h2>UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE</h2>
-                                <span>250.000</span>
-                                <span>VND</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    
-
-
-                </div>
+                <ListProduct data={dataProduct}></ListProduct>
 
                 <div className='Pagination'>
-                    <Pagination defaultCurrent={1} total={30} />;
+                    <Pagination defaultCurrent={1} total={30} />
                 </div>
-                
+
             </div>
         </>
 

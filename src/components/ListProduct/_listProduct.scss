@@ -1,0 +1,75 @@
+.ProductContainer {
+    display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    
+}
+
+.Product {
+    width: 100%;
+}
+
+.ProductImg img {
+    width: 95%;
+}
+
+
+
+.Title h2 {
+    font-size: 16px;
+    line-height: 1.5rem;
+    font-family: SFUFuturaLight !important;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    color: #050505;
+    text-align: start;
+}
+
+.Title span {
+    color: #050505;
+    font-family: SFUFuturaRegular !important;
+    font-size: 1rem;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+@media (max-width: 640px) {
+
+    .BreadcrumbAndSelectContainer{
+        margin-bottom: 30px;
+    }
+    .ProductContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        
+    }
+    .TitleSelect span{
+        font-size: 16px;
+    }
+
+    .Product {
+        width: 100%;
+        
+    }
+
+}
+
+
+@media (min-width: 640px) {
+
+    .ProductContainer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        
+    }
+    
+    .Product {
+        width: 100%;
+    }
+    
+}

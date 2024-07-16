@@ -1,6 +1,33 @@
 import React from 'react'
 import './style.css'
+import { INewCollectionData } from './interfaces/typeHome'
+import ListProduct from '../../components/ListProduct'
 const Home = () => {
+
+  const NewCollectionData: INewCollectionData[] = [
+
+    {
+      tenSanPham: 'UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE',
+      anh: 'https://api.under.vn/wp-content/uploads/2022/09/UTS013B.jpg',
+      giaTien: '250.000'
+    },
+    {
+      tenSanPham: 'UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE',
+      anh: 'https://api.under.vn/wp-content/uploads/2022/09/UTS013B.jpg',
+      giaTien: '250.000'
+    },
+    {
+      tenSanPham: 'UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE',
+      anh: 'https://api.under.vn/wp-content/uploads/2022/09/UTS013B.jpg',
+      giaTien: '250.000'
+    },
+    {
+      tenSanPham: 'UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE',
+      anh: 'https://api.under.vn/wp-content/uploads/2022/09/UTS013B.jpg',
+      giaTien: '250.000'
+    },
+
+  ]
   return (
     <>
       <div className='body'>
@@ -15,61 +42,7 @@ const Home = () => {
 
           <p>NEW COLLECTION</p>
 
-          <div className='ProductContainer'>
-            <div className='Product'>
-              <a href="">
-                <div className='ProductImg'>
-                  <img src="https://api.under.vn/wp-content/uploads/2022/09/UTS025_2-1.jpg" alt="" />
-                </div>
-                <div className='Title'>
-                  <h2>UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE</h2>
-                  <span>250.000</span>
-                  <span>VND</span>
-                </div>
-              </a>
-            </div>
-
-            <div className='Product'>
-              <a href="">
-                <div className='ProductImg'>
-                  <img src="https://api.under.vn/wp-content/uploads/2022/09/UTS024_2-1.jpg" alt="" />
-                </div>
-                <div className='Title'>
-                  <h2>UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE</h2>
-                  <span>250.000  <span> VND</span> </span>
-
-                </div>
-              </a>
-            </div>
-
-            <div className='Product'>
-              <a href="">
-                <div className='ProductImg'>
-                  <img src="https://api.under.vn/wp-content/uploads/2022/09/UTS025_2-1.jpg" alt="" />
-                </div>
-                <div className='Title'>
-                  <h2>UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE</h2>
-                  <span>250.000</span>
-                  <span>VND</span>
-                </div>
-              </a>
-            </div>
-
-            <div className='Product'>
-              <a href="">
-                <div className='ProductImg'>
-                  <img src="https://api.under.vn/wp-content/uploads/2022/09/UTS024_2-1.jpg" alt="" />
-                </div>
-                <div className='Title'>
-                  <h2>UNDER "12 ZODIAC" AQUARIUS TEE/ BLUE</h2>
-                  <span>250.000</span>
-                  <span>VND</span>
-                </div>
-              </a>
-            </div>
-
-
-          </div>
+          <ListProduct data={NewCollectionData}></ListProduct>
 
 
         </div>
